@@ -23,13 +23,7 @@ void	inputGrades(int grades[], int n)
 		if (grades[i] < 0 || grades[i] > 100)
 		{
 			printf("Invalid grade. Please enter a valid grade between 0 and 100\n");
-			continue;
-		}
-
-		// Break the loop if -1 is entered as the grade
-		if (grades[i] == -1)
-		{
-			break ;
+			continue ;
 		}
 		i++;
 	}
