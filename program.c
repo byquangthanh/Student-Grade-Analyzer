@@ -16,7 +16,7 @@ GOALS OF THE PROGRAM:
 void	inputGrades(int grades[], int n)
 {
 	int	i;
-	int result;
+	int	result;
 
 	i = 0;
 	while (i < n)
@@ -130,7 +130,7 @@ int	main(void)
 	inputGrades(grades, n);
 	average = calculateAverage(grades, n);
 
-	printf("Average grade: %f\n", average);
+	printf("Average grade: %.2f\n", average);
 	displayAboveAverage(grades, n, average);
 
 	// Free the dynamically allocated memory to prevent memory leaks
